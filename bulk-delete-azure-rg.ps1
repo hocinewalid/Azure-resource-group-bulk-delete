@@ -1,3 +1,36 @@
+
+<#
+.SYNOPSIS
+This script is designed to manage Azure Resource Groups interactively.
+
+.DESCRIPTION
+The script provides a menu-driven approach to list all Azure Resource Groups within a selected subscription,
+allows the user to select multiple groups for deletion, and handles multi-factor authentication.
+
+.PREREQUISITES
+- The user must have the Azure PowerShell module installed.
+- The user must have permissions to manage resource groups and subscriptions in Azure.
+
+.INSTRUCTIONS
+1. Run the script in a PowerShell terminal.
+2. When prompted, enter your Azure Tenant ID.
+3. Select an Azure subscription by its corresponding number.
+4. Select the resource groups you wish to delete by entering their corresponding numbers.
+5. Confirm your choices when prompted.
+
+.NOTES
+Author: Walid Hocine
+Last Updated: 12/12/2023
+Please ensure that you have the necessary permissions to delete resource groups, as this action is irreversible.
+
+.EXAMPLE
+PS> .\ManageAzureResourceGroups.ps1
+
+
+
+#>
+
+
 # Ensure Azure PowerShell is installed
 Install-Module -Name Az -AllowClobber -Scope CurrentUser
 
